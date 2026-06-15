@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Copa Airlines Virtual</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+header{
+    background:#0038A8;
+    color:white;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:bold;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05');
+    background-size:cover;
+    background-position:center;
+    height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:22px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:15px 35px;
+    background:#0038A8;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.section{
+    padding:70px 10%;
+}
+
+.section h2{
+    text-align:center;
+    color:#0038A8;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.formulario{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+}
+
+.formulario input,
+.formulario textarea{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    margin-bottom:15px;
+}
+
+.formulario button{
+    width:100%;
+    padding:15px;
+    background:#0038A8;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+footer{
+    background:#0038A8;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">COPA AIRLINES VIRTUAL</div>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#flota">Flota</a>
+        <a href="#rutas">Rutas</a>
+        <a href="#reclutamiento">Pilotos</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <div>
+        <h1>Bienvenido a Copa Airlines Virtual</h1>
+        <p>Conectando América a través de IVAO</p>
+        <a href="#reclutamiento" class="btn">Unirme Ahora</a>
+    </div>
+</section>
+
+<section class="section" id="flota">
+    <h2>Nuestra Flota</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Boeing 737-700</h3>
+            <p>Operaciones regionales.</p>
+        </div>
+
+        <div class="card">
+            <h3>Boeing 737-800</h3>
+            <p>Espina dorsal de la compañía.</p>
+        </div>
+
+        <div class="card">
+            <h3>Boeing 737 MAX 8</h3>
+            <p>Mayor eficiencia y alcance.</p>
+        </div>
+
+        <div class="card">
+            <h3>Boeing 737 MAX 9</h3>
+            <p>Rutas de alta demanda.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section" id="rutas">
+    <h2>Rutas Principales</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Colombia</h3>
+            <p>BOG, MDE, CLO, CTG, BAQ</p>
+        </div>
+
+        <div class="card">
+            <h3>Estados Unidos</h3>
+            <p>MIA, JFK, MCO, ORD, LAX</p>
+        </div>
+
+        <div class="card">
+            <h3>Sudamérica</h3>
+            <p>LIM, SCL, EZE, UIO, GYE</p>
+        </div>
+
+        <div class="card">
+            <h3>Centroamérica y Caribe</h3>
+            <p>SJO, GUA, HAV, PUJ y más.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section" id="reclutamiento">
+    <h2>Solicitud de Ingreso</h2>
+
+    <form class="formulario">
+
+        <input type="text" placeholder="Nombre Completo">
+
+        <input type="text" placeholder="VID IVAO">
+
+        <input type="number" placeholder="Edad">
+
+        <input type="text" placeholder="Horas de vuelo en IVAO">
+
+        <textarea rows="5"
+        placeholder="¿Por qué quieres unirte a Copa Airlines Virtual?"></textarea>
+
+        <button type="submit">Enviar Solicitud</button>
+
+    </form>
+
+</section>
+
+<footer>
+    © 2026 Copa Airlines Virtual | IVAO Virtual Airline
+</footer>
+
+</body>
+</html>
